@@ -39,10 +39,9 @@ public class CheckBoxes extends BasePage {
         return isDisplayed(contextMenuHeader); 
     }
 
-    public void goBack() {
-        DriverFactory.getDriver().navigate().back();
-    }
-        public void Back() {
-            DriverFactory.getDriver().navigate().back();
-}
+//    public void goBack() {
+//        DriverFactory.getDriver().navigate().back();
+//    }
+      
+
 }
