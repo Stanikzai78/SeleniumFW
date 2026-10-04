@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.framework.tests.IframeTest">
+        <methods>
+          <include name="iframeTestCheck"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.framework.tests.IframeTest -->
+      <class name="com.framework.tests.AlertTest">
+        <methods>
+          <include name="javaScritpTestAlert"/>
+          <include name="tearDown"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.framework.tests.AlertTest -->
+      <class name="com.framework.tests.LoginTestByFind">
+        <methods>
+          <include name="guru99LoginTest"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.framework.tests.LoginTestByFind -->
+      <class name="com.framework.tests.LoginTestAut">
+        <methods>
+          <include name="tearDown"/>
+          <include name="guru99LoginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.framework.tests.LoginTestAut -->
+      <class name="com.framework.tests.WindowHandleTest">
+        <methods>
+          <include name="windowHandleTest"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.framework.tests.WindowHandleTest -->
+      <class name="com.framework.tests.JavaFakerTest">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="javaFakerTests"/>
+        </methods>
+      </class> <!-- com.framework.tests.JavaFakerTest -->
+      <class name="com.framework.tests.SoftAssortion">
+        <methods>
+          <include name="verifySoftAssertion"/>
+        </methods>
+      </class> <!-- com.framework.tests.SoftAssortion -->
+      <class name="com.framework.tests.TableTest">
+        <methods>
+          <include name="setUpMehtod"/>
+          <include name="webTableTest"/>
+        </methods>
+      </class> <!-- com.framework.tests.TableTest -->
+      <class name="com.framework.tests.MouseMovementConcept">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="mouseAction"/>
+        </methods>
+      </class> <!-- com.framework.tests.MouseMovementConcept -->
+      <class name="com.framework.tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyValidLogin"/>
+        </methods>
+      </class> <!-- com.framework.tests.LoginTest -->
+      <class name="com.framework.tests.MultipleDropdownTest">
+        <methods>
+          <include name="multipleDropDownTest"/>
+        </methods>
+      </class> <!-- com.framework.tests.MultipleDropdownTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

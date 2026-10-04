@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Demo Practice Page</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  .dropdown { display:inline-block; position:relative; padding:8px 12px; background:#eee; cursor:pointer; }
+  .dropdown-content { display:none; position:absolute; background:#fff; border:1px solid #ccc; min-width:140px; z-index:1; }
+  .dropdown:hover .dropdown-content { display:block; }
+  .dropdown-content a { display:block; padding:8px 12px; text-decoration:none; color:#000; }
+  .green { color: green; }
+  .purple { color: purple; }
+  .block { margin: 16px 0; }
+</style>
+</head>
+<body>
+  <h3 id="heading">Heading</h3>
+  <div class="block"><input type="text" id="myTextInput" placeholder="Type here"></div>
+  <div class="block"><textarea class="area1" rows="3" cols="30"></textarea></div>
+  <div class="block"><input type="text" name="preText2" value="Some Pre-Filled Text"></div>
+  <div class="block">
+    <div id="myDropdown" class="dropdown">Hover Menu
+      <div class="dropdown-content">
+        <a id="dropOption1" href="javascript:void(0)">Link One</a>
+        <a id="dropOption2" href="javascript:void(0)" onclick="document.getElementById('heading').textContent='Link Two Selected';">Link Two</a>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <p id="pText" class="green">This Text is Green</p>
+    <button id="myButton" type="button" onclick="var p=document.getElementById('pText'); p.textContent='This Text is Purple'; p.className='purple';">Change Text</button>
+  </div>
+  <div class="block">
+    <input type="range" id="mySlider" min="0" max="100" value="0" oninput="document.getElementById('bar').value=this.value;">
+    <progress id="bar" max="100" value="0"></progress>
+  </div>
+  <div class="block">
+    <select id="mySelect" onchange="document.getElementById('meter').value=this.value;">
+      <option value="0">Set to 0%</option>
+      <option value="50">Set to 50%</option>
+      <option value="100">Set to 100%</option>
+    </select>
+    <meter id="meter" min="0" max="100" value="0"></meter>
+  </div>
+  <div class="block">
+    <label><input type="radio" name="radioGroup" id="radioButton1"> Radio One</label>
+    <label><input type="radio" name="radioGroup" id="radioButton2"> Radio Two</label>
+  </div>
+  <div class="block">
+    <label><input type="checkbox" id="checkBox1"> Check One</label>
+  </div>
+  <div class="block">
+    <iframe name="myFrame1" id="myFrame1" src="frame1.html" width="200" height="120"></iframe>
+  </div>
+</body>
+</html>
