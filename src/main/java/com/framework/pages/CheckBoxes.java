@@ -42,4 +42,7 @@ public class CheckBoxes extends BasePage {
     public void goBack() {
         DriverFactory.getDriver().navigate().back();
     }
+        public void Back() {
+            DriverFactory.getDriver().navigate().back();
+}
 }
