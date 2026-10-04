@@ -19,9 +19,9 @@ public class CheckBoxes extends BasePage {
     @FindBy(xpath = "//h3[contains(text(), 'Context Menu')]")
     private WebElement contextMenuHeader;
 
-    public void openCheckBox() { 
-        click(checkBoxesLink); 
-    }
+//    public void openCheckBox() { 
+//        click(checkBoxesLink); 
+//    }
 
     public void clickCheckBox1() { 
         click(checkBox1); 

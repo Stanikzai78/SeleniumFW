@@ -94,12 +94,12 @@ public class ClaimPage extends BasePage {
         return isDisplayed(eventsHeading);
     }
 
-    public void submitClaim() {
-        click(submitClaimLink);
-        selectFromDropdown(eventDropdown, "Travel Allowance");
-        selectFromDropdown(currencyDropdown, "Australian Dollar");
-        click(submitButton);
-    }
+//    public void submitClaim() {
+//        click(submitClaimLink);
+//        selectFromDropdown(eventDropdown, "Travel Allowance");
+//        selectFromDropdown(currencyDropdown, "Australian Dollar");
+//        click(submitButton);
+//    }
 
     public void addExpense() {
         click(addExpenseBtn);
